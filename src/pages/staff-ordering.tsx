@@ -1,16 +1,10 @@
 import Layout from "../components/layout";
 import cafeBackgroundImage from "../assets/images/5310794.jpg";
-import { useNavigate } from "react-router-dom";
 import useSWR from "swr";
-import { Alert, Button, Container, Divider, NumberInput, TextInput } from "@mantine/core";
-import { isNotEmpty, useForm } from "@mantine/form";
-import { useState } from "react";
-import { AxiosError } from "axios";
-import api from "../lib/axios";
-import { notifications } from "@mantine/notifications";
+import { Alert, Button } from "@mantine/core";
 import { Order } from "../lib/models";
 import Loading from "../components/loading";
-import { IconAlertTriangleFilled, IconPlus } from "@tabler/icons-react";
+import { IconAlertTriangleFilled } from "@tabler/icons-react";
 import { Link } from "react-router-dom";
 
 export default function Staff_OrderPage() {

@@ -2,7 +2,7 @@ import useSWR from "swr";
 import { Order } from "../lib/models";
 import { useNavigate, useParams } from "react-router-dom";
 import Layout from "../components/layout";
-import { Alert, Button, Container, Divider, TextInput } from "@mantine/core";
+import { Alert, Button, Container} from "@mantine/core";
 import Loading from "../components/loading";
 import { IconAlertTriangleFilled, IconTrash } from "@tabler/icons-react";
 import { useState } from "react";
@@ -15,7 +15,7 @@ export default function Order_Detail() {
   const { orderId } = useParams();
   const navigate = useNavigate();
 
-  const [isProcessing, setIsProcessing] = useState(false);
+  const [, setIsProcessing] = useState(false);
 
   const { data: orders, isLoading, error } = useSWR<Order>(`/orders/${orderId}`);
 
