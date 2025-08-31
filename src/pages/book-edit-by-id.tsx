@@ -12,7 +12,6 @@ import api from "../lib/axios";
 import { AxiosError } from "axios";
 import { notifications } from "@mantine/notifications";
 import { modals } from "@mantine/modals";
-import dayjs from "dayjs";
 
 export default function BookEditById() {
   const { bookId } = useParams();
