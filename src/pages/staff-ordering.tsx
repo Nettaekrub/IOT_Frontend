@@ -32,17 +32,6 @@ export default function Staff_OrderPage() {
         <section className="container mx-auto py-8">
             <div className="flex justify-between">
             <h1>รายการหนังสือ</h1>
-
-            <Button
-              component={Link}
-              leftSection={<IconPlus />}
-              to="/orders/create"
-              size="xs"
-              variant="primary"
-              className="flex items-center space-x-2"
-            >
-              เพิ่มหนังสือ
-            </Button>
           </div>
 
           {!orders && !error && <Loading />}
